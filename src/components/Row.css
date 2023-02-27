@@ -1,0 +1,10 @@
+.movies_row{
+    display: flex;
+    padding: 20px;
+}
+.movie{
+    width: 100%;
+    object-fit: cover;
+    max-height: 150px;
+    margin-right: 10px;
+}
