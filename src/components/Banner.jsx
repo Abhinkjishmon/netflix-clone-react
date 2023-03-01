@@ -20,13 +20,13 @@ const Banner = () => {
      style={{
         backgroundSize:'cover',
         backgroundPosition:'center',
-        backgroundImage:`url(${base_url}${movie.backdrop_path})`}}
+        backgroundImage:`url(${base_url}${movie?.backdrop_path})`}}
     >
       <div className="banner_content">
         <h1 className="banner_title">
           {movie.name}
         </h1>
-        <h2 className="banner_overview">{movie.overview}</h2>
+        <h2 className="banner_overview">{movie.overview?.slice(0,150)}...</h2>
       </div>
     </div>
   )
